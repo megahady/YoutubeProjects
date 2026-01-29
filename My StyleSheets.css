@@ -1,0 +1,78 @@
+My StyleSheets
+
+QPushButton {
+    color: #ffffff;
+    font-family: Eina01, sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    min-width: 100px;
+    max-width: 100px;
+    min-height: 34px;
+    max-height: 34px;
+    padding: 0;  /* Remove extra padding for fixed size */
+    border: none;
+    border-radius: 40px; /* half of 80px from original */
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #ff7426, stop:1 #f93a13);
+}
+
+QPushButton:hover:!disabled {
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(255,116,38), stop:1 rgb(249,58,19));
+}
+
+QPushButton:pressed:!disabled {
+    color: #cccccc;
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0,0,0,0.2), stop:1 rgba(0,0,0,0.2)), 
+                qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #ff7426, stop:1 #f93a13);
+}
+
+QPushButton:disabled {
+    opacity: 0.24;
+    background: #888888;
+    color: #ccc;
+}
+
+
+
+
+/* =================== */
+
+
+
+
+QPushButton {
+    min-width: 48px;
+    max-width: 48px;
+    min-height: 48px;
+    max-height: 48px;
+
+    border-radius: 24px;   /* perfect circle */
+    border: 2px solid #4CAF50;
+
+    background-color: #ffffff;
+    color: #4CAF50;
+
+    font-size: 22px;
+    font-weight: bold;
+
+    padding: 0px;
+}
+
+QPushButton:hover:!disabled {
+    background-color: #4CAF50;
+    color: #ffffff;
+}
+
+QPushButton:pressed:!disabled {
+    background-color: #3e8e41;
+    border-color: #3e8e41;
+}
+
+QPushButton:disabled {
+    opacity: 0.4;
+}
+
+
+
+/* ===== Icon source:
+svgrepo.com
+*/

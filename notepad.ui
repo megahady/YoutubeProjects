@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>698</width>
+    <height>669</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QTextEdit" name="textEdit">
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_Open">
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    color: #ffffff;
+    font-family: Eina01, sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    min-width: 100px;
+    max-width: 100px;
+    min-height: 34px;
+    max-height: 34px;
+    padding: 0;  /* Remove extra padding for fixed size */
+    border: none;
+    border-radius: 40px; /* half of 80px from original */
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #ff7426, stop:1 #f93a13);
+}
+
+QPushButton:hover:!disabled {
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(255,116,38), stop:1 rgb(249,58,19));
+}
+
+QPushButton:pressed:!disabled {
+    color: #cccccc;
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0,0,0,0.2), stop:1 rgba(0,0,0,0.2)), 
+                qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #ff7426, stop:1 #f93a13);
+}
+
+QPushButton:disabled {
+    opacity: 0.24;
+    background: #888888;
+    color: #ccc;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Open</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_Clear">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    color: #ffffff;
+    font-family: Eina01, sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    min-width: 100px;
+    max-width: 100px;
+    min-height: 34px;
+    max-height: 34px;
+    padding: 0;  /* Remove extra padding for fixed size */
+    border: none;
+    border-radius: 40px; /* half of 80px from original */
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #ff7426, stop:1 #f93a13);
+}
+
+QPushButton:hover:!disabled {
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(255,116,38), stop:1 rgb(249,58,19));
+}
+
+QPushButton:pressed:!disabled {
+    color: #cccccc;
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0,0,0,0.2), stop:1 rgba(0,0,0,0.2)), 
+                qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #ff7426, stop:1 #f93a13);
+}
+
+QPushButton:disabled {
+    opacity: 0.24;
+    background: #888888;
+    color: #ccc;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Clear</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_Save">
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    color: #ffffff;
+    font-family: Eina01, sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    min-width: 100px;
+    max-width: 100px;
+    min-height: 34px;
+    max-height: 34px;
+    padding: 0;  /* Remove extra padding for fixed size */
+    border: none;
+    border-radius: 40px; /* half of 80px from original */
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #ff7426, stop:1 #f93a13);
+}
+
+QPushButton:hover:!disabled {
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(255,116,38), stop:1 rgb(249,58,19));
+}
+
+QPushButton:pressed:!disabled {
+    color: #cccccc;
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0,0,0,0.2), stop:1 rgba(0,0,0,0.2)), 
+                qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #ff7426, stop:1 #f93a13);
+}
+
+QPushButton:disabled {
+    opacity: 0.24;
+    background: #888888;
+    color: #ccc;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Save</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_SaveAs">
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    color: #ffffff;
+    font-family: Eina01, sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    min-width: 100px;
+    max-width: 100px;
+    min-height: 34px;
+    max-height: 34px;
+    padding: 0;  /* Remove extra padding for fixed size */
+    border: none;
+    border-radius: 40px; /* half of 80px from original */
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #ff7426, stop:1 #f93a13);
+}
+
+QPushButton:hover:!disabled {
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(255,116,38), stop:1 rgb(249,58,19));
+}
+
+QPushButton:pressed:!disabled {
+    color: #cccccc;
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0,0,0,0.2), stop:1 rgba(0,0,0,0.2)), 
+                qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #ff7426, stop:1 #f93a13);
+}
+
+QPushButton:disabled {
+    opacity: 0.24;
+    background: #888888;
+    color: #ccc;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Save As</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_Zoomin">
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    min-width: 40px;
+    max-width: 40px;
+    min-height: 40px;
+    max-height: 40px;
+
+    border-radius: 20px;   /* perfect circle */
+    border: 2px solid #4CAF50;
+
+    background-color: #ffffff;
+    color: #4CAF50;
+
+    font-size: 22px;
+    font-weight: bold;
+
+    padding: 0px;
+}
+
+QPushButton:hover:!disabled {
+    background-color: #4CAF50;
+    color: #ffffff;
+}
+
+QPushButton:pressed:!disabled {
+    background-color: #3e8e41;
+    border-color: #3e8e41;
+}
+
+QPushButton:disabled {
+    opacity: 0.4;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Z+</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_Zoomout">
+       <property name="minimumSize">
+        <size>
+         <width>44</width>
+         <height>44</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>44</width>
+         <height>44</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    min-width: 40px;
+    max-width: 40px;
+    min-height: 40px;
+    max-height: 40px;
+
+    border-radius: 20px;   /* perfect circle */
+    border: 2px solid #4CAF50;
+
+    background-color: #ffffff;
+    color: #4CAF50;
+
+    font-size: 22px;
+    font-weight: bold;
+
+    padding: 0px;
+}
+
+QPushButton:hover:!disabled {
+    background-color: #4CAF50;
+    color: #ffffff;
+}
+
+QPushButton:pressed:!disabled {
+    background-color: #3e8e41;
+    border-color: #3e8e41;
+}
+
+QPushButton:disabled {
+    opacity: 0.4;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Z-</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,31 @@
+
+
+
+
+Folder structure 
+
+Project (1)/
+ |
+ ├─ notepad.ui         # designed in Qt Designer
+ |
+ └─ notepad.py          # reusable class
+
+
+
+
+# ======================================================================
+# This code for testing the widget standalone
+# Don't forget to remove it when integrating into a larger application.
+# ======================================================================
+
+if __name__ == "__main__":
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+
+    # Create and show the widget standalone
+    widget = notepad()
+    widget.setWindowTitle("Notpad")
+    widget.resize(400, 300)
+    widget.show()
+
+    sys.exit(app.exec_())
